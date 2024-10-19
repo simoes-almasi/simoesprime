@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simule seu crédito consignado, empréstimo pessoal e saque do FGTS com facilidade e rapidez.">
+    <title>Simulação de Crédito Consignado</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #043033; /* Cor principal */
+            color: #d9a525; /* Cor secundária aplicada ao texto do cabeçalho */
+            padding: 20px;
+            text-align: center;
+        }
+        .hero {
+            background-image: url('https://via.placeholder.com/1200x500'); /* Placeholder */
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .hero h1 {
+            font-size: 3em;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #043033; /* Cor principal */
+            padding: 15px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section.intro {
+            padding: 40px;
+            text-align: center;
+            background-color: white;
+            border-bottom: 1px solid #ddd;
+        }
+        section.intro h2 {
+            color: #043033; /* Cor principal */
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        section.intro p {
+            font-size: 1.2em;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        section.categories {
+            padding: 40px;
+            background-color: #fafafa;
+            text-align: center;
+        }
+        section.categories h2 {
+            font-size: 2em;
+            color: #043033; /* Cor principal */
+            margin-bottom: 20px;
+        }
+        .categories-container {
+            display: flex;
+            justify-content: space-around;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .category-box {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 30%;
+        }
+        .category-box h3 {
+            color: #043033; /* Cor principal */
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .category-box p {
+            color: #666;
+            font-size: 1em;
+        }
+        .category-box button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #d9a525; /* Cor secundária */
+            color: white;
+            border: none;
+            font-size: 1.1em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .category-box button:hover {
+            background-color: #c08e1f; /* Tom mais escuro da cor secundária */
+        }
+        .simulation-form {
+            display: inline-block;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            max-width: 600px;
+        }
+        .simulation-form label {
+            font-size: 1em;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .simulation-form input, .simulation-form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        .simulation-form button {
+            width: 100%;
+            padding: 15px;
+            background-color: #043033; /* Cor principal */
+            color: white;
+            border: none;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .simulation-form button:hover {
+            background-color: #03272a; /* Tom mais escuro da cor principal */
+        }
+        footer {
+            background-color: #043033; /* Cor principal */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .highlight {
+            color: #d9a525; /* Cor secundária */
+        }
+        .hero h1, nav a:hover, section.intro h2, .simulation-form button:hover {
+            color: #d9a525; /* Cor secundária no hover e nos destaques */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Simulação de Crédito Consignado</h1>
+    </header>
+
+    <!-- Substitua o placeholder com o caminho da sua imagem -->
+    <section class="hero" style="background-image: url('https://www.canva.com/design/DAGT-J7snU8/HSFW1WMPVLJKJ6C4LGy6mA/view');">
+        <h1>Facilidade, Rapidez e Simplicidade</h1>
+    </section>
+
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Empréstimo Consignado</a>
+        <a href="#">Empréstimo Pessoal</a>
+        <a href="#">Saque FGTS</a>
+        <a href="#">Contato</a>
+    </nav>
+
+    <section class="intro">
+        <h2>Crédito Consignado que <span class="highlight">Cabe no Seu Bolso</span></h2>
+        <p>Com o nosso simulador, você pode calcular facilmente o valor das parcelas e o tempo necessário para quitar o seu empréstimo consignado. Oferecemos as melhores condições do mercado para que você tenha total tranquilidade.</p>
+    </section>
+
+    <section class="categories">
+        <h2>Nossas Categorias</h2>
+        <div class="categories-container">
+            <div class="category-box">
+                <h3>Empréstimo Consignado</h3>
+                <p>Simule seu crédito consignado com condições especiais e facilidade de pagamento diretamente na folha de pagamento.</p>
+                <button>Saiba Mais</button>
+            </div>
+            <div class="category-box">
+                <h3>Empréstimo Pessoal</h3>
+                <p>Contrate seu empréstimo pessoal de forma rápida e sem complicação, ideal para suas necessidades urgentes.</p>
+                <button>Saiba Mais</button>
+            </div>
+            <div class="category-box">
+                <h3>Saque FGTS</h3>
+                <p>Aproveite a oportunidade de sacar seu FGTS e ter acesso a um dinheiro extra para seus projetos.</p>
+                <button>Saiba Mais</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="simulation">
+        <h2>Faça sua Simulação</h2>
+        <form class="simulation-form" action="/simular" method="POST">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+
+            <label for="valor">Valor do Empréstimo:</label>
+            <input type="number" id="valor" name="valor" placeholder="Ex: 10000" required>
+
+            <label for="parcelas">Número de Parcelas:</label>
+            <select id="parcelas" name="parcelas" required>
+                <option value="12">12 meses</option>
+                <option value="24">24 meses</option>
+                <option value="36">36 meses</option>
+                <option value="48">48 meses</option>
+            </select>
+
+            <label for="renda">Renda Mensal:</label>
+            <input type="number" id="renda" name="renda" placeholder="Ex: 5000" required>
+
+            <button type="submit">Simular</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Simulador de Crédito Consignado. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
